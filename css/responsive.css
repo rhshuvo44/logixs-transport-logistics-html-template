@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* services section  */
+  .service-section {
+    /* margin-top: 0px; */
+    /* background: url("../assets/img/pattern-1.png"); */
+    /* background: #0b3b5e; */
+    /* height: 668px; */
+    /* height: 100vh; */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* services section  */
+  .service-section {
+    /* margin-top: 0px; */
+    /* background: url("../assets/img/pattern-1.png"); */
+    /* background: #0b3b5e; */
+    /* height: 668px; */
+    /* height: 100vh; */
+  }
+}

@@ -74,16 +74,15 @@
 
 /* services section start  */
 .service-section {
-  margin-top: -100px;
+  /* margin-top: -100px; */
   position: relative;
-  /* background: var(--bg-theme-color1);
-  clip-path: polygon(50% 0%, 78% 8%, 100% 0, 100% 70%, 100% 100%, 50% 100%, 20% 100%, 0 100%, 0 16%, 33% 0); */
-  background: url("../assets/img/pattern-1.png");
+  /* background: url("../assets/img/pattern-1.png"); */
   /* height: 668px; */
-  background-repeat: no-repeat;
-  /* background-position: center; */
-  /* background-size: cover; */
+  height: 100vh;
+  background-color: var(--bg-theme-color1);
+  /* background-repeat: no-repeat; */
   width: 100%;
+  /* object-fit: cover; */
 }
 
 .service-section .card {
@@ -139,4 +138,14 @@
   color: #7c858c;
   padding: 0 20px;
   margin-bottom: 20px;
+}
+.service-section .services-text p {
+  font-size: 18px;
+  color: #8fa1ae;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+.service-section .services-text p strong {
+  border-bottom: 2px solid var(--border-theme-color2);
 }
