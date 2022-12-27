@@ -72,14 +72,20 @@
   line-height: 36px;
 }
 
-/* about section start  */
+/* services section start  */
 .service-section {
   margin-top: -100px;
   position: relative;
+  /* background: var(--bg-theme-color1);
+  clip-path: polygon(50% 0%, 78% 8%, 100% 0, 100% 70%, 100% 100%, 50% 100%, 20% 100%, 0 100%, 0 16%, 33% 0); */
   background: url("../assets/img/pattern-1.png");
-  height: 668px;
+  /* height: 668px; */
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-size: cover; */
   width: 100%;
 }
+
 .service-section .card {
   position: relative;
   background: #ffffff;
@@ -88,6 +94,7 @@
   transition: all 300ms ease;
   margin-top: -50px;
   transition: all 0.5s;
+  z-index: 155;
 }
 
 .card-icon i {
