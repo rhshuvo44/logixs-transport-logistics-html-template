@@ -17,6 +17,18 @@
   --border-theme-color3: #ebf1f5;
   --border-theme-color4: #7c858c;
 }
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img{
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .primary-btn {
   position: relative;
   font-size: 13px;
@@ -57,6 +69,36 @@
   box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
   border: none;
 }
+.sec-title {
+  margin-bottom: 25px;
+}
+.sub-title {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  color: var(--theme-color4);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.sub-title::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2px;
+  width: 42px;
+  background: var(--bg-theme-color2);
+  content: "";
+}
+.sec-title h2 {
+  position: relative;
+  line-height: 1.2em;
+  color: var(--theme-color1);
+  font-size: 50px;
+  font-weight: 700;
+}
 /* carousel  */
 .carousel-bg {
   background: linear-gradient(rgba(51, 91, 131, 0.3), rgba(51, 91, 131, 0.3)),
@@ -74,15 +116,15 @@
 
 /* services section start  */
 .service-section {
-  /* margin-top: -100px; */
   position: relative;
+  /* margin-top: -100px; */
   /* background: url("../assets/img/pattern-1.png"); */
   /* height: 668px; */
+  /* background-repeat: no-repeat; */
+  /* object-fit: cover; */
   height: 100%;
   background-color: var(--bg-theme-color1);
-  /* background-repeat: no-repeat; */
   width: 100%;
-  /* object-fit: cover; */
 }
 
 .service-section .card {
@@ -153,6 +195,7 @@
 /* about section start  */
 .about-section {
   margin: 100px 0;
+  position: relative;
 }
 .about-section .about-banner {
   background-image: url(../assets/img/about-1.jpg);
@@ -162,7 +205,7 @@
   height: 90vh;
   position: relative;
 }
-.about-section .about-banner .about-expert-info{
+.about-section .about-banner .about-expert-info {
   background: var(--bg-theme-color2);
   clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
   width: 200px;
@@ -171,12 +214,127 @@
   left: 0;
   top: 50px;
 }
-.about-section .about-banner .about-banner-img{
+.about-section .about-banner .about-banner-img {
   background: #fff;
   position: absolute;
-  left: 50px;
-  bottom: -40px;
+  left: 20px;
+  bottom: -50px;
 }
-.about-section .about-banner .about-banner-img img{
+.about-section .about-banner .about-banner-img::after {
+  content: "";
+  position: absolute;
+  background: #ff6d2e;
+  height: 10px;
+  width: 60%;
+  right: -196px;
+  bottom: 0px;
+}
+.about-section .about-banner .about-banner-img img {
   padding: 20px;
+}
+.about-section .about-content {
+  position: relative;
+}
+.about-section .about-content .about-info {
+  position: absolute;
+  background: #fff;
+  top: 50px;
+  left: -100px;
+}
+.about-section .about-info p {
+  color: #7c858c;
+}
+.about-section .about-info .blockquote p {
+  color: var(--theme-color2);
+  padding-left: 20px;
+  border-left: 5px solid var(--border-theme-color1);
+}
+.about-section .about-info .youtube-btn {
+  position: relative;
+}
+.about-section .about-info ul li {
+  color: var(--theme-color1);
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: bold;
+}
+.about-section .about-info ul li i {
+  color: var(--theme-color2);
+  font-size: 28px;
+  line-height: 30px;
+}
+.about-section .about-info .youtube-btn i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--bg-theme-color2);
+  height: 70px;
+  background: #fff;
+  width: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.wrapper {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-main {
+  position: relative;
+  display: inline-block;
+}
+
+.video {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  background: transparent;
+  color: #fff;
+  display: inline-block;
+  background: #fff;
+  z-index: 999;
+}
+
+@keyframes waves {
+  0% {
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+  }
+}
+
+.waves {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  opacity: 0;
+  border-radius: 100%;
+  right: -50px;
+  bottom: -50px;
+  z-index: -1;
+  animation: waves 3s ease-in-out infinite;
+}
+.wave-1 {
+  animation-delay: 0s;
+}
+.wave-2 {
+  animation-delay: 1s;
+}
+.wave-3 {
+  animation-delay: 2s;
 }

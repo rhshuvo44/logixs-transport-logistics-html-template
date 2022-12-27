@@ -1,8 +1,16 @@
 @media only screen and (max-width: 600px) {
+    .about-section .about-content .about-info {
+        top: 0px;
+        left: 0px;
+      }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    /* .about-section .about-content .about-info {
+        top: 0px;
+        left: 0px;
+      } */
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
