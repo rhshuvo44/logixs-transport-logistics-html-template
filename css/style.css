@@ -78,7 +78,7 @@
   position: relative;
   /* background: url("../assets/img/pattern-1.png"); */
   /* height: 668px; */
-  height: 100vh;
+  height: 100%;
   background-color: var(--bg-theme-color1);
   /* background-repeat: no-repeat; */
   width: 100%;
@@ -148,4 +148,35 @@
 }
 .service-section .services-text p strong {
   border-bottom: 2px solid var(--border-theme-color2);
+}
+
+/* about section start  */
+.about-section {
+  margin: 100px 0;
+}
+.about-section .about-banner {
+  background-image: url(../assets/img/about-1.jpg);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  height: 90vh;
+  position: relative;
+}
+.about-section .about-banner .about-expert-info{
+  background: var(--bg-theme-color2);
+  clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
+.about-section .about-banner .about-banner-img{
+  background: #fff;
+  position: absolute;
+  left: 50px;
+  bottom: -40px;
+}
+.about-section .about-banner .about-banner-img img{
+  padding: 20px;
 }
