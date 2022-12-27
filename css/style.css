@@ -3,15 +3,72 @@
   padding: 0;
   margin: 0;
 }
-
+:root {
+  --theme-color1: #0b3b5e;
+  --theme-color2: #ff6d2e;
+  --theme-color3: #ebf1f5;
+  --theme-color4: #7c858c;
+  --bg-theme-color1: #0b3b5e;
+  --bg-theme-color2: #ff6d2e;
+  --bg-theme-color3: #ebf1f5;
+  --bg-theme-color4: #7c858c;
+  --border-theme-color1: #0b3b5e;
+  --border-theme-color2: #ff6d2e;
+  --border-theme-color3: #ebf1f5;
+  --border-theme-color4: #7c858c;
+}
+.primary-btn {
+  position: relative;
+  font-size: 13px;
+  line-height: 25px;
+  color: #ffffff;
+  padding: 15px 40px;
+  font-weight: 600;
+  background: var(--bg-theme-color2);
+  letter-spacing: 0.1em;
+  overflow: hidden;
+  text-transform: uppercase;
+  display: inline-block;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.primary-btn:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: var(--bg-theme-color1);
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+  transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1),
+    -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+.primary-btn:hover:before {
+  transform: scale(1, 1);
+  transform-origin: bottom left;
+}
+.primary-btn:hover {
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+}
 /* carousel  */
 .carousel-bg {
-  background: linear-gradient(rgba(51, 91, 131, 0.6), rgba(51, 91, 131, 0.6)),
+  background: linear-gradient(rgba(51, 91, 131, 0.3), rgba(51, 91, 131, 0.3)),
     url("../assets/img/bg-1.jpg");
   height: 100vh;
-  background-position: center;
-  background-size: cover;
   object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .carousel-content p {
   font-size: 18px;
