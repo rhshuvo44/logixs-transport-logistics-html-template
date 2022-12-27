@@ -29,7 +29,8 @@
   overflow: hidden;
   text-transform: uppercase;
   display: inline-block;
-  opacity: 1;
+  z-index: 1;
+  border: none;
   transition: all 0.5s;
 }
 .primary-btn:before {
@@ -40,16 +41,11 @@
   width: 100%;
   content: "";
   background-color: var(--bg-theme-color1);
-  -webkit-transform: scale(0, 1);
+  z-index: -1;
   transform: scale(0, 1);
-  -webkit-transform-origin: top right;
   transform-origin: top right;
-  transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1),
-    -webkit-transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
-  -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 .primary-btn:hover:before {
@@ -59,6 +55,7 @@
 .primary-btn:hover {
   color: #ffffff;
   box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+  border: none;
 }
 /* carousel  */
 .carousel-bg {
@@ -73,4 +70,66 @@
 .carousel-content p {
   font-size: 18px;
   line-height: 36px;
+}
+
+/* about section start  */
+.service-section {
+  margin-top: -100px;
+  position: relative;
+  background: url("../assets/img/pattern-1.png");
+  height: 668px;
+  width: 100%;
+}
+.service-section .card {
+  position: relative;
+  background: #ffffff;
+  padding: 80px 20px 20px;
+  text-align: center;
+  transition: all 300ms ease;
+  margin-top: -50px;
+  transition: all 0.5s;
+}
+
+.card-icon i {
+  position: absolute;
+  left: 50%;
+  top: -55px;
+  margin-left: -55px;
+  height: 110px;
+  width: 110px;
+  background: var(--bg-theme-color2);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 54px;
+  border-radius: 50%;
+  transition: all 300ms ease;
+  z-index: 1;
+}
+
+.service-section .card:hover .card-icon i {
+  background: var(--bg-theme-color1);
+}
+.service-section .card .img-box {
+  overflow: hidden;
+  transition: 0.5s all;
+}
+.service-section .card img {
+  transition: 0.5s all;
+  object-fit: cover;
+}
+.service-section .card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 40%);
+}
+.service-section .card img:hover {
+  transform: scale(1, 1.5);
+}
+.service-section .card p {
+  font-size: 16px;
+  line-height: 32px;
+  color: #7c858c;
+  padding: 0 20px;
+  margin-bottom: 20px;
 }
