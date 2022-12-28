@@ -1,13 +1,20 @@
 @media only screen and (max-width: 600px) {
-    .about-section .about-content .about-info {
-        top: 0px;
-        left: 0px;
-      }
+  .about-section .about-content .about-info {
+    top: 0px;
+    left: 0px;
+  }
+  .sec-title h2 {
+    font-size: 36px;
+  }
+  
+  .faq-card {
+    margin-top: 100px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    /* .about-section .about-content .about-info {
+  /* .about-section .about-content .about-info {
         top: 0px;
         left: 0px;
       } */

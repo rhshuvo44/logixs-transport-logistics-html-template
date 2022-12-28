@@ -44,6 +44,7 @@ img {
   z-index: 1;
   border: none;
   transition: all 0.5s;
+  border-radius: 0px;
 }
 .primary-btn:before {
   position: absolute;
@@ -404,16 +405,24 @@ img {
   margin-bottom: 20px;
 }
 /* faq section start  */
-.faq-section .sec-bg {
+.faq-section {
+  position: relative;
+  padding: 120px 0 0;
+}
+.faq-section .bg-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 120px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: center top;
   background: linear-gradient(rgba(51, 91, 131, 0.8), rgba(51, 91, 131, 0.8)),
     url(../assets/img/1.png);
-  background-size: cover;
-  background-position: center;
-  height: 700px;
 }
-.faq-counter {
-  margin-top: -150px;
-}
+
 .faq-card {
   position: relative;
 }
