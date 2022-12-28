@@ -480,3 +480,45 @@ img {
   color: #7c858c;
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
+/* project section start  */
+.project-area .sub-title::before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 2px;
+  width: 42px;
+  background: var(--bg-theme-color2);
+  content: "";
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
