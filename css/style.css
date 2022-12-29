@@ -705,7 +705,43 @@ img {
     ),
     url(../assets/img/1.png);
 }
+.faq-block {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
 
+.faq-block .faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  background-color: var(--bg-theme-color2);
+  border-radius: 50%;
+  transition: all 300ms ease;
+}
+.faq-block .faq-icon i {
+  font-size: 14px;
+}
+
+.faq-block .faq-content h4 {
+  font-size: 18px;
+  line-height: 1.2em;
+  color: var(--theme-color1);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.faq-block .faq-content p {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--theme-color4);
+}
+.faq-block:hover .faq-icon {
+  background-color: var(--bg-theme-color1);
+}
 .accordion-button:not(.collapsed) {
   color: var(--bg-theme-color2);
 }
