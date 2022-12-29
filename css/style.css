@@ -113,7 +113,7 @@ img {
   background-size: cover;
   background-position: center;
 }
-.carousel-inner{
+.carousel-inner {
   text-align: left;
 }
 .carousel-content p {
@@ -488,12 +488,12 @@ img {
   color: #fff;
 }
 
-/* faq section start  */
-.faq-section {
+/* fun fact section start  */
+.fact-section {
   position: relative;
   padding: 120px 0 0;
 }
-.faq-section .bg-image {
+.fact-section .bg-image {
   position: absolute;
   left: 0;
   top: 0;
@@ -507,14 +507,14 @@ img {
     url(../assets/img/1.png);
 }
 
-.faq-card {
+.fact-card {
   position: relative;
 }
-.faq-card:hover .fac-icon-card {
+.fact-card:hover .fact-icon-card {
   transform: scale(0.8);
   background-color: var(--bg-theme-color3);
 }
-.fac-icon-card {
+.fact-icon-card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -527,13 +527,13 @@ img {
   margin: 0 auto -60px;
   z-index: 1;
 }
-.fac-icon-card img {
+.fact-icon-card img {
   display: inline-block;
   height: auto;
   max-width: 100%;
   padding: 30px;
 }
-.faq-card-body {
+.fact-card-body {
   position: relative;
   display: flex;
   align-items: center;
@@ -543,7 +543,7 @@ img {
   border-top: 4px solid var(--border-theme-color2);
   box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
 }
-.faq-card-body .cont-box {
+.fact-card-body .cont-box {
   font-size: 60px;
   color: var(--theme-color1);
   font-weight: 700;
@@ -551,13 +551,13 @@ img {
   margin-right: 20px;
   text-transform: uppercase;
 }
-.faq-card-body span {
+.fact-card-body span {
   font-size: 60px;
   color: var(--theme-color1);
   font-weight: 700;
   line-height: 1em;
 }
-.faq-card-body h4 {
+.fact-card-body h4 {
   display: inline-block;
   font-size: 16px;
   line-height: 25px;
@@ -684,4 +684,14 @@ img {
 }
 .inner-box:hover .content-box .inner .icon {
   background-color: var(--bg-theme-color2);
+}
+/* team-section start  */
+.team-section .card-title {
+  color: var(--bg-theme-color1);
+}
+.team-section .designation {
+  color: var(--bg-theme-color2);
+}
+.team-section .card-text {
+  color: #7c858c;
 }
