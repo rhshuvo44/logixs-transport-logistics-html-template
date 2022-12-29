@@ -691,7 +691,46 @@ img {
 }
 .team-section .designation {
   color: var(--bg-theme-color2);
+  text-transform: uppercase;
 }
 .team-section .card-text {
   color: #7c858c;
+}
+
+/* faqs section start  */
+.faqs {
+  background: linear-gradient(
+      rgba(234, 240, 244, 0.9),
+      rgba(234, 240, 244, 0.9)
+    ),
+    url(../assets/img/1.png);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--bg-theme-color2);
+}
+.accordion-button {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--theme-color1);
+  font-weight: 700;
+  transition: all 500ms ease;
+  border-bottom: 1px solid var(--border-theme-color3);
+}
+.accordion-body {
+  padding: 2rem 1rem;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  color: #7c858c;
+  margin-bottom: 0;
+}
+.accordion-button:not(.collapsed)::after {
+  background: url(../assets/icons/minus-solid.svg);
+  color: var(--bg-theme-color1);
+}
+
+.accordion-button::after {
+  background: url(../assets/icons/plus-solid.svg);
+  color: var(--bg-theme-color2);
 }
