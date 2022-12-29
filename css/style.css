@@ -435,8 +435,8 @@ img {
 }
 .work-btn .count span {
   position: relative;
-    color: #ffffff;
-    z-index: 1;
+  color: #ffffff;
+  z-index: 1;
 }
 .work-btn .count::after {
   position: absolute;
@@ -446,8 +446,15 @@ img {
   width: 100%;
   background: var(--bg-theme-color2);
   content: "";
-  -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+}
+.work-btn .work-btn-title {
+  display: inline-block;
+  padding: 15px 35px;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  transition: all 0.5s;
 }
 
 .work-card:hover .work-card-icon {
@@ -462,6 +469,13 @@ img {
   color: rgb(211, 210, 210);
 }
 .work-card:hover .work-card-body h4 {
+  color: #fff;
+}
+.work-card:hover .count::after {
+  background: var(--bg-theme-color1);
+}
+.work-card:hover .work-btn-title {
+  background: var(--bg-theme-color2);
   color: #fff;
 }
 
