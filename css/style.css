@@ -670,3 +670,9 @@ img {
   background-color: var(--bg-theme-color1);
   transition: all 300ms ease;
 }
+.inner-box .content-box h4 a:hover {
+  color: var(--bg-theme-color2);
+}
+.inner-box:hover .content-box .inner .icon {
+  background-color: var(--bg-theme-color2);
+}
