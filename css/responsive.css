@@ -1,10 +1,16 @@
 @media only screen and (max-width: 600px) {
+  .carousel-inner {
+    text-align: center;
+  }
   .about-section .about-content .about-info {
     top: 0px;
     left: 0px;
   }
+  .work-area {
+    margin-top: 900px;
+  }
   .sec-title h2 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .faq-card {

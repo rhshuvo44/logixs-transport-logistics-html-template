@@ -113,6 +113,9 @@ img {
   background-size: cover;
   background-position: center;
 }
+.carousel-inner{
+  text-align: left;
+}
 .carousel-content p {
   font-size: 18px;
   line-height: 36px;
@@ -198,11 +201,12 @@ img {
 
 /* about section start  */
 .about-section {
-  margin: 100px 0;
   position: relative;
+  padding: 120px 0 70px;
+  padding-bottom: 50px;
 }
 .about-section .about-banner {
-  background-image: url(../assets/img/about-1.jpg);
+  background-image: url(../assets/img/about/about-1.jpg);
   background-position: center;
   background-size: cover;
   object-fit: cover;
@@ -238,6 +242,7 @@ img {
 }
 .about-section .about-content {
   position: relative;
+  z-index: 99999;
 }
 .about-section .about-content .about-info {
   position: absolute;
@@ -343,6 +348,10 @@ img {
   animation-delay: 2s;
 }
 /* work section start  */
+.work-area {
+  position: relative;
+  padding: 120px 0 70px;
+}
 .work-area .sub-title::before {
   position: absolute;
   left: 50%;
