@@ -831,7 +831,7 @@ img {
   position: relative;
   padding: 70px 0px;
 }
-.quote-youtube-btn  .wrapper {
+.quote-youtube-btn .wrapper {
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -866,4 +866,25 @@ img {
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
+}
+/* client box  */
+.client-box {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.client-box a {
+  position: relative;
+}
+.client-box img {
+  display: inline-block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+.client-box img:hover {
+  opacity: 1;
 }
