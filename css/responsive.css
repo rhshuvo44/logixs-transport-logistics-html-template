@@ -16,7 +16,19 @@
   .fact-card {
     margin-top: 100px;
   }
-  
+  .quote-form {
+    padding: 15px 60px 60px;
+    max-width: 820px;
+    margin: 10px;
+  }
+  .quote-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .quote-youtube-btn  .wrapper {
+   
+    left: 50%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
