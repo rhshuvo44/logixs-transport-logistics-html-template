@@ -103,6 +103,10 @@ img {
   font-size: 50px;
   font-weight: 700;
 }
+/* navbar  */
+.navbar {
+  z-index: 99999999999999999999999;
+}
 /* carousel  */
 .carousel-bg {
   background: linear-gradient(rgba(51, 91, 131, 0.3), rgba(51, 91, 131, 0.3)),
