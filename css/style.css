@@ -829,12 +829,12 @@ img {
 }
 .quote-youtube-btn {
   position: relative;
-  padding: 70px 0px;
+  padding: 50px 0px;
 }
 .quote-youtube-btn .wrapper {
   display: inline-block;
   position: absolute;
-  top: 50%;
+  top: 0px;
   left: 20%;
   transform: translate(-50%, -50%);
 }
@@ -887,4 +887,23 @@ img {
 }
 .client-box img:hover {
   opacity: 1;
+}
+/* call-to-action */
+.call-to-action-box {
+  background: var(--bg-theme-color2);
+}
+.call-to-action-box h2 {
+  font-size: 36px;
+  line-height: 1.2em;
+  color: var(--bg-theme-color3);
+  font-weight: 700;
+}
+.call-to-action-box .primary-btn {
+  background: var(--bg-theme-color1);
+}
+.call-to-action-box .primary-btn:before {
+  background-color: var(--bg-theme-color3);
+}
+.call-to-action-box .primary-btn:hover {
+  color: var(--bg-theme-color1);
 }

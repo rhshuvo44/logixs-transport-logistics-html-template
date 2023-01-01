@@ -20,6 +20,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <!-- animate.css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- custome css  -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- custome media query  -->
@@ -157,7 +162,10 @@
         <div class="row">
           <div class="col-md-4">
             <!-- single item start  -->
-            <div class="card my-5 my-md-0">
+            <div
+              class="card my-5 my-md-0 wow fadeInUp"
+              style="visibility: visible; animation-name: fadeInUp"
+            >
               <div class="card-icon">
                 <i class="fa-solid fa-plane"></i>
               </div>
@@ -181,7 +189,11 @@
           <div class="col-md-4">
             <!-- single item start  -->
 
-            <div class="card my-5 my-md-0 mt-md-5">
+            <div
+              class="card my-5 my-md-0 mt-md-5 wow fadeInUp"
+              data-wow-delay="300ms"
+              style="visibility: visible; animation-name: fadeInUp"
+            >
               <div class="card-icon">
                 <i class="fa-solid fa-ship"></i>
               </div>
@@ -1078,11 +1090,31 @@
       </div>
     </section>
     <!-- Client Section end -->
+    <!-- call-to-action Section start -->
+    <section class="call-to-action">
+      <div class="container">
+        <div class="call-to-action-box p-5">
+          <div class="row py-3">
+            <div class="col-md-6">
+              <h2>Fastest & secure way to transport anything anytime</h2>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end align-items-center">
+              <div>
+                <button class="btn primary-btn">Discover more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- call-to-action Section end -->
 
     <!-- bootstrap@5.0.2 js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
     <!-- custome js  -->
     <script src="js/apps.js"></script>
   </body>
