@@ -33,6 +33,4 @@ var swiper = new Swiper(".client", {
   },
 });
 
-
 new WOW().init();
-
