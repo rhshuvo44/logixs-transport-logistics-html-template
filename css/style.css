@@ -967,3 +967,40 @@ img {
 .footer-social li a:hover {
   background: var(--bg-theme-color2);
 }
+.big-footer h5 {
+  color: var(--bg-theme-color3);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+.big-footer .user-link li {
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+.big-footer .user-link li a {
+  position: relative;
+  display: inline-block;
+  transition: all 300ms ease;
+  color: #8fa1ae;
+}
+.big-footer .user-link li a::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--bg-theme-color2);
+  content: "";
+  transition: all 300ms ease;
+}
+.big-footer .user-link li a:hover {
+  color: #ffffff;
+}
+.big-footer .user-link li a:hover::before {
+  width: 100%;
+}
