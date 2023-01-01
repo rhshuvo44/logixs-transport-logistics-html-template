@@ -696,7 +696,24 @@ img {
 .team-section .card-text {
   color: #7c858c;
 }
-
+.social-link li {
+  display: inline-block;
+}
+.social-link li a {
+  display: block;
+  background: #07304d;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 50%;
+  color: var(--bg-theme-color3);
+  transition: all 0.5s;
+}
+.social-link li a:hover {
+  background: var(--bg-theme-color2);
+}
 /* faqs section start  */
 .faqs {
   background: linear-gradient(
@@ -948,25 +965,7 @@ img {
 .footer-from .primary-btn:hover {
   border: 1px solid var(--bg-theme-color2);
 }
-.footer-social li {
-  display: inline-block;
-  padding: 10px;
-}
-.footer-social li a {
-  display: block;
-  background: #07304d;
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 50%;
-  color: var(--bg-theme-color3);
-  transition: all 0.5s;
-}
-.footer-social li a:hover {
-  background: var(--bg-theme-color2);
-}
+
 .big-footer h5 {
   color: var(--bg-theme-color3);
   font-size: 20px;
