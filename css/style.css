@@ -1062,3 +1062,9 @@ img {
 .footer-bottom .copyright-text a:hover {
   color: var(--bg-theme-color3);
 }
+
+/* -------------services pages -------------- */
+
+.services-bg {
+  background: transparent;
+}
