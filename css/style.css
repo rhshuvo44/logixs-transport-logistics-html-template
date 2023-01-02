@@ -122,7 +122,7 @@ img {
 /* carousel  */
 .carousel-bg {
   background: linear-gradient(rgba(51, 91, 131, 0.6), rgba(51, 91, 131, 0.6)),
-    url("../assets/img/bg-1.jpg");
+    url("../assets/img/bg/bg-1.jpg");
   height: 100vh;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -538,7 +538,7 @@ img {
   background-size: cover;
   background-position: center top;
   background: linear-gradient(rgba(51, 91, 131, 0.8), rgba(51, 91, 131, 0.8)),
-    url(../assets/img/1.png);
+    url(../assets/img/bg/1.png);
 }
 
 .fact-card {
@@ -829,7 +829,7 @@ img {
 
 /* quote section start  */
 .quote {
-  background: url(../assets/img/3.jpg);
+  background: url(../assets/img/bg/3.jpg);
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -976,7 +976,7 @@ img {
 /* big footer  */
 .big-footer {
   background: linear-gradient(rgba(11, 59, 94, 0.9), rgba(11, 59, 94, 0.9)),
-    url(../assets/img/5.jpg);
+    url(../assets/img/bg/5.jpg);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
@@ -1100,7 +1100,7 @@ img {
 
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../assets/img/1.png);
+    url(../assets/img/bg/1.png);
   height: 350px;
   width: 100%;
   margin-top: 60px;
