@@ -61,3 +61,8 @@ $("#scroll-to-top").illBeBack({
   bgPosition: "50% 50%",
   bgSize: "50%",
 });
+
+// counter
+$("#counter").countMe(40, 18);
+$("#counter2").countMe(40, 100);
+$("#counter3").countMe(40, 38);
