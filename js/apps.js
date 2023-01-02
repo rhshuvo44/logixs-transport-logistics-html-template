@@ -34,3 +34,13 @@ var swiper = new Swiper(".client", {
 });
 
 new WOW().init();
+
+$("#goTop").goTop({
+  container: "",
+  appear: 200,
+  scrolltime: 800,
+  src: "fa fa-angle-up",
+  fadein: 500,
+  fadeout: 500,
+  opacity: 1,
+});

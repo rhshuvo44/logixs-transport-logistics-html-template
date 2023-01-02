@@ -35,7 +35,7 @@
 
   <body>
     <!-- navbar section start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
@@ -75,6 +75,7 @@
     </nav>
     <!-- navbar section end -->
     <!-- carousel section start -->
+
     <div
       id="carouselExampleControls"
       class="carousel slide"
@@ -83,57 +84,37 @@
       <div class="carousel-inner">
         <!-- single slid section start  -->
         <div class="carousel-item active">
-          <div
-            class="carousel-bg px-5 text-white d-flex flex-column align-items-center justify-content-center"
-          >
-            <div class="carousel-content">
-              <h2 class="display-1 fw-bold">
-                We’re Global <br />Logistics Partners
-              </h2>
-              <p>
-                There are many of passages of lorem Ipsum, but the majori <br />
-                have suffered alteration in some form.
-              </p>
-              <button class="btn primary-btn">Discover more</button>
-            </div>
-          </div>
-        </div>
-        <!-- single slid section end  -->
-        <!-- single slid section start  -->
-
-        <div class="carousel-item">
-          <div
-            class="carousel-bg px-5 text-white d-flex flex-column align-items-center justify-content-center"
-          >
-            <div class="carousel-content">
-              <h2 class="display-1 fw-bold">
-                We’re Global <br />Logistics Partners
-              </h2>
-              <p>
-                There are many of passages of lorem Ipsum, but the majori <br />
-                have suffered alteration in some form.
-              </p>
-              <button class="btn primary-btn">Discover more</button>
-            </div>
-          </div>
-        </div>
-        <!-- single slid section end  -->
-        <!-- single slid section start  -->
-
-        <div class="carousel-item">
-          <div
-            class="carousel-bg px-5 text-white d-flex flex-column align-items-center justify-content-center"
-          >
-            <div class="carousel-content">
-              <h2 class="display-1 fw-bold">
-                We’re Global <br />Logistics Partners
-              </h2>
-              <p>
-                There are many of passages of lorem Ipsum, but the majori <br />
-                have suffered alteration in some form.
-              </p>
-              <button class="btn primary-btn">Discover more</button>
-            </div>
+          <div class="carousel-bg"></div>
+          <div class="carousel-caption">
+            <h2
+              class="display-1 fw-bold wow fadeInDown"
+              style="visibility: visible; animation-name: fadeInDown"
+            >
+              We’re Global <br />Logistics Partners
+            </h2>
+            <p
+              class="wow fadeInUp"
+              data-wow-delay="300ms"
+              style="
+                visibility: visible;
+                animation-delay: 300ms;
+                animation-name: fadeInUp;
+              "
+            >
+              There are many of passages of lorem Ipsum, but the majori <br />
+              have suffered alteration in some form.
+            </p>
+            <button
+              class="btn primary-btn wow fadeInLeft"
+              data-wow-delay="600ms"
+              style="
+                visibility: visible;
+                animation-delay: 600ms;
+                animation-name: fadeInLeft;
+              "
+            >
+              Discover more
+            </button>
           </div>
         </div>
         <!-- single slid section end  -->
@@ -194,7 +175,11 @@
             <div
               class="card my-5 my-md-0 wow fadeInUp"
               data-wow-delay="300ms"
-              style="visibility: visible; animation-name: fadeInUp"
+              style="
+                visibility: visible;
+                animation-delay: 300ms;
+                animation-name: fadeInUp;
+              "
             >
               <div class="card-icon">
                 <i class="fa-solid fa-ship"></i>

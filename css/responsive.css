@@ -2,6 +2,10 @@
   .carousel-inner {
     text-align: center;
   }
+  .carousel-caption {
+    padding: 0px 10px ;
+    text-align: center;
+  }
   .about-section .about-content .about-info {
     top: 0px;
     left: 0px;
@@ -25,8 +29,7 @@
     max-width: 100%;
     text-align: center;
   }
-  .quote-youtube-btn  .wrapper {
-   
+  .quote-youtube-btn .wrapper {
     left: 50%;
   }
 }

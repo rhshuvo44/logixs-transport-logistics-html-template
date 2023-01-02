@@ -103,20 +103,54 @@ img {
   font-size: 50px;
   font-weight: 700;
 }
+/* scroll-to-top  */
+
+#goTop {
+  right: 20px !important;
+  bottom: 20px !important;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--theme-color2);
+  z-index: 100;
+  display: none;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+  transition: all 300ms ease;
+}
+#goTopSpan {
+  font-size: 16px !important;
+  color: #ffffff !important;
+}
+#goTop:hover {
+  background: var(--theme-color1);
+  color: #ffffff;
+}
 /* navbar  */
 .navbar {
   z-index: 99999999999999999999999;
 }
 /* carousel  */
 .carousel-bg {
-  background: linear-gradient(rgba(51, 91, 131, 0.3), rgba(51, 91, 131, 0.3)),
+  background: linear-gradient(rgba(51, 91, 131, 0.6), rgba(51, 91, 131, 0.6)),
     url("../assets/img/bg-1.jpg");
   height: 100vh;
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  animation: carouselAnimation 10s infinite;
 }
+.carousel-caption {
+  right: 0%;
+  top: 20%;
+  text-align: left;
+}
+
 .carousel-inner {
   text-align: left;
 }
@@ -124,7 +158,17 @@ img {
   font-size: 18px;
   line-height: 36px;
 }
-
+@keyframes carouselAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* services section start  */
 .service-section {
   position: relative;
