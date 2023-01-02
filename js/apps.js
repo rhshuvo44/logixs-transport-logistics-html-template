@@ -35,12 +35,29 @@ var swiper = new Swiper(".client", {
 
 new WOW().init();
 
-$("#goTop").goTop({
-  container: "",
-  appear: 200,
-  scrolltime: 800,
-  src: "fa fa-angle-up",
-  fadein: 500,
-  fadeout: 500,
-  opacity: 1,
+$("#scroll-to-top").illBeBack({
+  // top offset to trigger the scroll to top button
+  offset: 250,
+  // animation speed
+  speed: 200,
+  // animation duration
+  duration: 500,
+  // animation duration for hover effect
+  hoverDuration: 300,
+  // Styling options
+  ownStyle: false,
+  round: false,
+  zIndex: 99999999,
+  size: 40,
+  color: "#fff",
+  // Position options
+  top: "auto",
+  left: "auto",
+  bottom: 20,
+  right: 20,
+  // Background options
+  bgColor: "#ff6d2e",
+  hoverBgColor: "#0b3b5e",
+  bgPosition: "50% 50%",
+  bgSize: "50%",
 });
