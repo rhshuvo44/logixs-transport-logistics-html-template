@@ -111,7 +111,7 @@ img {
   cursor: pointer;
   border-radius: 50%;
   margin: 0 auto;
-  font-size: 16px ;
+  font-size: 16px;
   box-shadow: 0 0 5px rgb(0 0 0 / 10%);
 }
 
@@ -127,6 +127,7 @@ img {
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 60px;
   background-position: center;
   animation: carouselAnimation 10s infinite;
 }
@@ -598,7 +599,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 /* project section start  */
-.project-area{
+.project-area {
   position: relative;
   z-index: 1;
 }
@@ -1093,6 +1094,32 @@ img {
   color: #8fa1ae;
 }
 .footer-bottom .copyright-text a:hover {
+  color: var(--bg-theme-color3);
+}
+/* all pages banner  */
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../assets/img/1.png);
+  height: 350px;
+  width: 100%;
+  margin-top: 60px;
+  background-size: cover;
+  background-position: top center;
+  object-fit: cover;
+  position: relative;
+}
+
+.banner .banner-info h1 {
+  font-size: 64px;
+  color: #ffffff;
+  margin-bottom: 17px;
+}
+.breadcrumb-item a {
+  color: var(--bg-theme-color2);
+}
+.breadcrumb-item.active,
+.breadcrumb-item + .breadcrumb-item::before {
   color: var(--bg-theme-color3);
 }
 
