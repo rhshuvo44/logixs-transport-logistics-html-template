@@ -1128,3 +1128,11 @@ img {
 .services-bg {
   background: transparent;
 }
+/* -------------contact pages -------------- */
+
+.contact-details h2 {
+  position: relative;
+  line-height: 1.2em;
+  font-size: 50px;
+  font-weight: 700;
+}
